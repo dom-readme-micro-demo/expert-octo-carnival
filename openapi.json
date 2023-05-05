@@ -15,20 +15,21 @@
   "paths": {
     "/pets": {
       "get": {
-        "summary": "List all pets",
+        "summary": "List all pets!",
         "operationId": "listPets",
         "tags": [
-          "pets"
+          "pets",
+          "another-tag"
         ],
         "parameters": [
           {
             "name": "limit",
             "in": "query",
-            "description": "How many items to return at one time (max 100)",
-            "required": false,
+            "description": "How many items to return at one time (max 300)",
+            "required": true,
             "schema": {
               "type": "integer",
-              "maximum": 100,
+              "maximum": 300,
               "format": "int32"
             }
           }
